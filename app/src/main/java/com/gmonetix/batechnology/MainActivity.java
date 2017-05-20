@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,SettingsActivity.class));
                 break;
 
+            case R.id.menu_main_chat:
+                startActivity(new Intent(MainActivity.this,ChatActivity.class));
+                break;
+
         }
 
         return super.onOptionsItemSelected(item);

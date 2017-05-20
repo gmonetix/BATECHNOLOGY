@@ -12,14 +12,6 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 
@@ -129,8 +121,8 @@ public class Home extends Fragment implements View.OnClickListener {
 
         @Override
         public void onPageFinished(WebView view, String url) {
-            dialog.dismiss();
             view.loadUrl("javascript:var nav = document.getElementById(\"main-nav-bg\"); nav.parentNode.removeChild(nav); javascript:var toTop = document.getElementById(\"toTop\"); toTop.parentNode.removeChild(toTop); javascript:var footer = document.getElementById(\"footer\"); footer.parentNode.removeChild(footer); javascript:var csbwfs = document.getElementById(\"csbwfs-delaydiv\"); csbwfs.parentNode.removeChild(csbwfs);");
+            dialog.dismiss();
         }
 
     }

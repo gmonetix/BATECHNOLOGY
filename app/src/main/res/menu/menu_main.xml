@@ -3,15 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/menu_main_chat"
+        android:icon="@drawable/ic_message_filled"
+        app:showAsAction="ifRoom"
+        android:title="Chat" />
+
+    <item
         android:id="@+id/menu_main_about_us"
         android:icon="@drawable/ic_about_us"
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
         android:title="@string/title_about_us" />
 
     <item
         android:id="@+id/menu_main_settings"
         android:icon="@drawable/ic_settings"
-        app:showAsAction="ifRoom"
+        app:showAsAction="never"
         android:title="@string/title_settings" />
 
 </menu>
